@@ -1,0 +1,172 @@
+
+body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+
+nav {
+    background-color: #000000; /* Fondo negro */
+    color: rgb(0, 0, 0);
+    padding: 15px 50px;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;  /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción original */
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Añadido para animación al pasar el mouse */
+}
+
+.logo-text {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navMenu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menuItem {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Transición suave al cambiar el color */
+}
+
+/* Cambia el color a amarillo al pasar el mouse */
+.menuItem:hover {
+    color: #fbff00; /* Color amarillo */
+}
+
+.menuItem a {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color blanco por defecto */
+}
+
+.menuItem.active {
+    color: #FFD400; /* Color dorado cuando es activo */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.iniciar-sesion {
+    background-color: #FFD400;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+}
+
+.iniciar-sesion:hover {
+    background-color: #e0b100;
+    color: #ffffff;
+}
+
+/* Animación en el logo al pasar el mouse */
+.logo img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del logo al pasar el mouse */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navTop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navMenu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-text {
+        font-size: 1.5em;
+    }
+}
+
+/* Estilos para los contenedores de la Misión y Visión */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1800px;
+    height: 80vh;
+
+}
+
+.left-container {
+    margin-right: 2%; /* Márgenes de separación entre los contenedores */
+}
+
+.right-container {
+    margin-left: 2%;
+}
+
+
+.left-container,
+.right-container {
+    width: 48%;
+    background-color: yellow; /* Fondo amarillo */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-container h2,
+.right-container h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+    justify-items: center;
+    font-size: 65px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.left-container p,
+.right-container p {
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
