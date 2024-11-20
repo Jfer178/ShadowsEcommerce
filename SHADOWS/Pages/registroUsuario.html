@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/RegistroUsuario.css">
+    <title>REGISTRO SHADOWS</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="title">SHADOWS - Registro</h1>
+        <div class="form-container">
+            <form action="#" id="registroForm">
+                <div class="input-group">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" placeholder="Ingresa tu cédula" required>
+                </div>
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+                </div>
+                <div class="input-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="input-group">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Crea tu contraseña" required>
+                </div>
+                <button type="submit" class="btn">Registrar</button>
+            </form>
+            <p class="error-message" id="errorMessage"></p>
+        </div>
+    </div>
+    <script src="/js/RegistroUsuario.js"></script>
+</body>
+</html>

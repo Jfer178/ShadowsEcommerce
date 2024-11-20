@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 50px;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navTop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.Logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.navMenu {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.menuItem a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.menuItem a:hover {
+    color: #ffeb3b;
+}
+
+.menuItem.active a {
+    color: #ffeb3b;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.iniciar-sesion {
+    background-color: transparent;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.iniciar-sesion:hover {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+    color: #888;
+    line-height: 1.6;
+}
+
+.contact-info {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-info a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #e0c200;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    font-size: 14px;
+    color: #888;
+    margin-top: 40px;
+}
