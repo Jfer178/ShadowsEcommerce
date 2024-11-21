@@ -535,3 +535,18 @@ main {
         grid-template-columns: 1fr;
     }
 }
+
+.buscador {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.buscador input {
+    width: 50%;  /* Ajustamos el ancho del input */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}

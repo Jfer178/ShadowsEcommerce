@@ -43,7 +43,7 @@ window.onload = function() {
             // Redirigir a la página de inicio o login
             window.location.href = "/index.html";
         });
-        
+
         // Agregar el enlace de "Cerrar sesión" al lado del nombre
         loginButton.appendChild(logoutLink);
     }

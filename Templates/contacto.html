@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/imagenes inicios/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="icon" href="static/img/imagenes inicios/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/contacto.css">
     <title>SHADOW</title>
 </head>
 <body>
@@ -12,19 +12,19 @@
     <header>
         <nav id="nav">
             <div class="navTop">
-                <!-- Logo reducido -->
+                
                 <div class="navItem logo">
-                    <img src="/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
+                    <img src="static/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
                     <span class="logo-text">SHADOWS</span>
                 </div>
-                <!-- Barra de navegación con varios ítems -->
+                
                 <div class="navMenu">
-                    <h3 class="menuItem"><a href="/index.html">INICIO</a></h3> <!-- Página de inicio -->
-                    <h3 class="menuItem"><a href="/Pages/productos.html">PRODUCTOS</a></h3> <!-- Página de productos -->
-                    <h3 class="menuItem "><a href="/Pages/sobre_nosotros.html">SOBRE NOSOTROS</a></h3> <!-- Página sobre nosotros -->
-                    <h3 class="menuItem active"><a href="/Pages/contacto.html">CONTACTO</a></h3> <!-- Página de contacto -->
+                    <h3 class="menuItem"><a href="{{ url_for('index') }}">INICIO</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('productos')}}">PRODUCTOS</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('sobre_nosotros')}}">SOBRE NOSOTROS</a></h3> 
+                    <h3 class="menuItem active"><a href="{{ url_for('contacto')}}">CONTACTO</a></h3> 
                 </div>
-                <!-- Botón de Iniciar sesión alineado a la derecha -->
+                
                 <div class="navItem buttons">
                     <button class="btn iniciar-sesion">INICIAR SESIÓN</button>
                 </div>

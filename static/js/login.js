@@ -29,7 +29,7 @@ document.querySelector("#loginForm").addEventListener("submit", function(event) 
             sessionStorage.setItem("userName", data.nombre);
 
             // Redirigir a la página principal
-            window.location.href = "/index.html";
+            window.location.href = '/';  // Cambié a la ruta del servidor en lugar de un archivo estático
         } else {
             // Si las credenciales son incorrectas, mostrar un mensaje de error
             document.querySelector("#errorMessage").textContent = "Correo o contraseña incorrectos.";

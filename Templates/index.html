@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/inicio.css">
-    <link rel="icon" href="/img/imagenes inicios/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/inicio.css">
+    <link rel="icon" href="static/img/imagenes inicios/Logo.png" type="image/x-icon">
     <title>SHADOWS SHOP</title>
 </head>
 <body>
     <header>
         <nav id="nav">
             <div class="navTop">
-                <!-- Logo reducido -->
+                
                 <div class="navItem logo">
-                    <img src="/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
+                    <img src="static/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
                     <span class="logo-text">SHADOWS</span>
                 </div>
-                <!-- Barra de navegación con varios ítems -->
+                
                 <div class="navMenu">
-                    <h3 class="menuItem active"><a href="/index.html">INICIO</a></h3> <!-- Página de inicio -->
-                    <h3 class="menuItem"><a href="/Pages/productos.html">PRODUCTOS</a></h3> <!-- Página de productos -->
-                    <h3 class="menuItem"><a href="/Pages/sobre_nosotros.html">SOBRE NOSOTROS</a></h3> <!-- Página sobre nosotros -->
-                    <h3 class="menuItem"><a href="/Pages/contacto.html">CONTACTO</a></h3> <!-- Página de contacto -->
+                    <h3 class="menuItem active"><a href="{{ url_for('index') }}">INICIO</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('productos')}}">PRODUCTOS</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('sobre_nosotros')}}">SOBRE NOSOTROS</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('contacto')}}">CONTACTO</a></h3> 
                 </div>
-                <!-- Botón de Iniciar sesión alineado a la derecha -->
+                
                 <div class="navItem buttons">
-                    <button class="btn iniciar-sesion" onclick="window.location.href='/Pages/login.html'">  INICIAR SESIÓN  </button>
+                    <button class="btn iniciar-sesion" onclick="window.location.href='/login'">INICIAR SESIÓN</button>
+
                 </div>
             </div>
         </nav>
@@ -34,22 +35,21 @@
     <main class="main-section">
         <div class="content-container">
             <div class="image-left">
-                <img src="/img/imagenes inicios/mujer1.png" alt="Imagen izquierda">
+                <img src="{{ url_for('static', filename='img/imagenes inicios/mujer1.png') }}" alt="Imagen izquierda">
             </div>
             <div class="text-center">
                 <h1>Tu Mejor Estilo</h1>
                 <h2>Ropa de todo estilo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a enim nec nisl ullamcorper eleifend. Praesent risus leo, fringilla et ipsum.</p>
-                <button class="btn ver-productos" onclick="location.href='productos.html';">VER PRODUCTOS</button>
+                <button class="btn ver-productos" onclick="location.href='/productos'">VER PRODUCTOS</button>
             </div>
             <div class="image-right">
-                <img src="/img/imagenes inicios/hombre1.png" alt="Imagen derecha">
+                <img src="{{ url_for('static', filename='img/imagenes inicios/hombre1.png') }}" alt="Imagen derecha">
             </div>
         </div>
     </main>
 
-
-    <!-- Sección de Recorrido -->
+    
     <section class="recorrido">
         <div class="content">
             <h2>Recorrido de nuestra Marca</h2>
@@ -71,59 +71,57 @@
         </div>
     </section>
 
-    <!-- Sección de Fotos de la Marca -->
+    
     <section class="fotos">
         <div class="content">
             <h2>NUESTRA ROPA</h2>
             <div class="photo-gallery">
-                <!-- Contenedor de imágenes que se desplazan -->
+                
                 <div class="photo-slider">
-                    <img src="/img/imagenes inicios/Galeria1.jpg" alt="Foto 1">
-                    <img src="/img/imagenes inicios/Galeria2.jpg" alt="Foto 2">
-                    <img src="/img/imagenes inicios/Galeria4.jpg" alt="Foto 3">
-                    <img src="/img/imagenes inicios/Galeria3.jpg" alt="Foto 4">
-                    <img src="/img/imagenes inicios/Galeria5.png" alt="Foto 5">
-                    <img src="/img/imagenes inicios/Galeria6.jpg" alt="Foto 6">
-                    <img src="/img/imagenes inicios/Galeria7.jpg" alt="Foto 7">
-                    <img src="/img/imagenes inicios/Galeria8.jpg" alt="Foto 8">
-                    <img src="/img/imagenes inicios/Galeria9.jpg" alt="Foto 9">
-                    <img src="/img/imagenes inicios/Galeria10.jpg" alt="Foto 10">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria1.jpg') }}" alt="Foto 1">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria2.jpg') }}" alt="Foto 2">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria4.jpg') }}" alt="Foto 3">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria3.jpg') }}" alt="Foto 4">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria5.png') }}" alt="Foto 5">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria6.jpg') }}" alt="Foto 6">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria7.jpg') }}" alt="Foto 7">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria8.jpg') }}" alt="Foto 8">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria9.jpg') }}" alt="Foto 9">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/Galeria10.jpg') }}" alt="Foto 10">
                 </div>
-                <!-- Botón para deslizar a la siguiente imagen -->
+                
                 <button class="next-btn">></button>
             </div>
         </div>
     </section>
-
-    <!-- Sección de Colaboraciones -->
+    
     <section class="colaboraciones">
         <div class="content">
             <h2>Colaboraciones</h2>
             <p>Estamos orgullosos de colaborar con diseñadores y marcas de renombre para crear productos exclusivos.</p>
             <div class="brands">
                 <div class="brand">
-                    <img src="/img/imagenes inicios/H&M-Logo.png" alt="Marca 1">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/H&M-Logo.png') }}" alt="Marca 1">
                 </div>
                 <div class="brand">
-                    <img src="/img/imagenes inicios/lacoste-logo-4.png" alt="Marca 2">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/lacoste-logo-4.png') }}" alt="Marca 2">
                 </div>
                 <div class="brand">
-                    <img src="/img/imagenes inicios/koaj.png" alt="Marca 3">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/koaj.png') }}" alt="Marca 3">
                 </div>
                 <div class="brand">
-                    <img src="/img/imagenes inicios/LogoZARA.jpg" alt="Marca 4">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/LogoZARA.jpg') }}" alt="Marca 4">
                 </div>
                 <div class="brand">
-                    <img src="/img/imagenes inicios/LogoParada.webp" alt="Marca 5">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/LogoParada.webp') }}" alt="Marca 5">
                 </div>
                 <div class="brand">
-                    <img src="/img/imagenes inicios/LogoGucci.avif" alt="Marca 5">
+                    <img src="{{ url_for('static', filename='img/imagenes inicios/LogoGucci.avif') }}" alt="Marca 6">
                 </div>
             </div>
         </div>
     </section>
-
-
+    
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
@@ -160,21 +158,20 @@
             <div class="footer-section social">
                 <h3>Síguenos en</h3>
                 <div class="social-icons">
-                    <a href="#"><img src="/img/imagenes inicios/facebook.webp" alt="Facebook"></a>
-                    <a href="#"><img src="/img/imagenes inicios/Instagram_logo_2022.svg.webp" alt="Instagram"></a>
-                    <a href="#"><img src="/img/imagenes inicios/Xlogo.avif" alt="Twitter"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='img/imagenes inicios/facebook.webp') }}" alt="Facebook"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='img/imagenes inicios/Instagram_logo_2022.svg.webp') }}" alt="Instagram"></a>
+                    <a href="#"><img src="{{ url_for('static', filename='img/imagenes inicios/Xlogo.avif') }}" alt="Twitter"></a>
                 </div>
             </div>
         </div>
     
         <div class="footer-bottom">
-            <p>Todos los derechos reservados SHADOWS 2024 | Razón social: SHADOWS S.A.S. </p>
+            <p>Todos los derechos reservados SHADOWS 2024 | Razón social: SHADOWS S.A.S.</p>
         </div>
     </footer>
     
-
-    <script src="/js/inicio.js"></script>
-    <script src="/js/login.js"></script>
+    <script src="{{ url_for('static', filename='js/inicio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
     
 </body>
 </html>

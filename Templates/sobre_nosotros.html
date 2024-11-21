@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/sobre_nosotros.css">
-    <link rel="icon" href="/img/imagenes inicios/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/sobre_nosotros.css">
+    <link rel="icon" href="static/img/imagenes inicios/Logo.png" type="image/x-icon">
     <title>SHADOWS</title>
 </head>
 <body>
@@ -12,19 +12,19 @@
     <header>
         <nav id="nav">
             <div class="navTop">
-                <!-- Logo reducido -->
+               
                 <div class="navItem logo">
-                    <img src="/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
+                    <img src="static/img/imagenes inicios/Logo.png" alt="Logo" class="Logo">
                     <span class="logo-text">SHADOWS</span>
                 </div>
-                <!-- Barra de navegación con varios ítems -->
+                
                 <div class="navMenu">
-                    <h3 class="menuItem"><a href="/index.html">INICIO</a></h3>
-                    <h3 class="menuItem"><a href="/Pages/productos.html">PRODUCTOS</a></h3>
-                    <h3 class="menuItem active"><a href="/Pages/sobre_nosotros.html">SOBRE NOSOTROS</a></h3>
-                    <h3 class="menuItem"><a href="/Pages/contacto.html">CONTACTO</a></h3>
+                    <h3 class="menuItem"><a href="{{ url_for('index') }}">INICIO</a></h3>
+                    <h3 class="menuItem"><a href="{{ url_for('productos')}}">PRODUCTOS</a></h3> 
+                    <h3 class="menuItem active"><a href="{{ url_for('sobre_nosotros')}}">SOBRE NOSOTROS</a></h3> 
+                    <h3 class="menuItem"><a href="{{ url_for('contacto')}}">CONTACTO</a></h3> 
                 </div>
-                <!-- Botón de Iniciar sesión -->
+                
                 <div class="navItem buttons">
                     <button class="btn iniciar-sesion">INICIAR SESIÓN</button>
                 </div>
@@ -32,10 +32,10 @@
         </nav>
     </header>
 
-    <!-- Contenedor principal para la Misión y Visión -->
+   
     <section class="about-section">
         <div class="container">
-            <!-- Contenedor para la Misión -->
+            
             <div class="left-container">
                 <h2>Misión</h2>
                 <p>
@@ -44,7 +44,7 @@
                     Buscamos ser la marca que acompaña a los jóvenes en su camino hacia la autenticidad y el autoexpresión, transformando cada look en una declaración de individualidad.
                 </p>
             </div>
-            <!-- Contenedor para la Visión -->
+            
             <div class="right-container">
                 <h2>Visión</h2>
                 <p>Ser la marca de ropa de referencia para los jóvenes de hoy, reconocida por su capacidad para interpretar y definir las tendencias de la moda moderna, siempre a la vanguardia y adaptada a las diversas personalidades y estilos de vida. <br>
